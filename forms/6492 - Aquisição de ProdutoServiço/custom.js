@@ -494,3 +494,13 @@ function getSuper(){
     }
 } 
 window.addEventListener("load", setSuper)
+
+
+function datinha(){
+	var dataInicio = document.getElementById("txt_dataInicio").value;
+	var dataTermino = document.getElementById("txt_dataTermino").value;
+
+	dataInicio = dataInicio.split("-").reverse().join("-");
+	dataTermino = dataTermino.split("-").reverse().join("-");
+}
+window.addEventListener("load", datinha)
